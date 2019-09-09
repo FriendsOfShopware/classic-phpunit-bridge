@@ -1,7 +1,7 @@
 {
     "name": "frosh/shopware-classic-phpunit-bridge",
     "type": "library",
-    "description": "PHPUnit Testsuite for Shopware Classic",
+    "description": "PHPUnit Bridge for Shopware Classic",
     "license": "MIT",
     "require": {
         "php": "~7.2"
