@@ -4,7 +4,7 @@
     "description": "PHPUnit Bridge for Shopware Classic",
     "license": "MIT",
     "require": {
-        "php": "~7.2"
+        "php": "^7.2"
     },
     "autoload": {
         "psr-4": {
