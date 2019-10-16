@@ -39,7 +39,11 @@ class TestKernel extends \Shopware\Kernel
         $repository = $container->get('models')->getRepository(Shop::class);
 
         $shop = $repository->getActiveDefault();
-        Shopware()->Container()->get('shopware.components.shop_registration_service')->registerShop($shop);
+        if (Shopware()->Container()->has('shopware.components.shop_registration_service')) {
+            Shopware()->Container()->get('shopware.components.shop_registration_service')->registerShop($shop);
+        } else {
+            $shop->registerResources();
+        }
 
         $_SERVER['HTTP_HOST'] = $shop->getHost();
     }
