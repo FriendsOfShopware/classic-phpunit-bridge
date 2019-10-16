@@ -6,7 +6,6 @@ define('TESTS_RUNNING', true);
 $_SERVER['REMOTE_ADDR'] = '127.0.0.1';
 $_SERVER['SERVER_REQUEST_METHOD'] = 'GET';
 
-debug_print_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
 $searchDirectory = dirname(__DIR__, 7);
 $pluginFolder = dirname(__DIR__, 6);
 $pluginName = pathinfo($pluginFolder, PATHINFO_BASENAME);
